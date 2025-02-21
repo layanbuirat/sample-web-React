@@ -1,0 +1,60 @@
+footer {
+    background-color: #45425c; /* Dark background for footer */
+    color: #fff; /* White text color for contrast */
+    padding: 40px 0; /* Vertical padding */
+    width: 100%;
+  }
+  
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute columns evenly */
+    align-items: flex-start; /* Align columns to the top */
+    gap: 20px; /* Space between columns */
+  }
+  
+  footer .row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    width: 100%;
+    justify-content: center; /* Center the content horizontally */
+    gap: 20px; /* Space between rows */
+  }
+  
+  footer .col-md-4 {
+    flex: 1 1 calc(33.333% - 20px); /* Make each column take one-third of the width */
+    max-width: 300px; /* Set a maximum width */
+    text-align: center; /* Center align the content inside */
+    margin: 10px 0; /* Add some vertical margin */
+  }
+  
+  footer .col-md-4 h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px; /* Space below headers */
+    color: #ffdd57; /* Highlighted header color */
+  }
+  
+  footer .col-md-4 p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc; /* Softer white for paragraphs */
+  }
+  
+  footer .social-icons {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    gap: 15px; /* Space between icons */
+  }
+  
+  footer .social-icons a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White icon color */
+    font-size: 1.5rem; /* Size of the icons */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  footer .social-icons a:hover {
+    transform: scale(1.2); /* Scale icon on hover */
+    color: #ffdd57; /* Change icon color on hover */
+  }
+  

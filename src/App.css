@@ -1,0 +1,174 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-page height and prevent horizontal scroll */
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 10px 20px;
+  z-index: 10;
+  background-color: rgb(71, 132, 111);
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .navbar-nav .nav-link {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  transition: color 0.3s;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #ffdd57;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Sections Container */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  width: 100%;
+  max-width: 800px;
+  padding: 60px 20px;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 300px; /* Ensure sections have some height */
+}
+
+/* Welcome Section */
+.welcom {
+  background-color: rgb(105, 189, 161);
+}
+
+.welcom img {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 20px;
+  left: 200px ;
+}
+
+/* Portfolio Section */
+.Portfolio {
+  background-color: rgb(145, 212, 180);
+}
+
+.Portfolio img {
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* About Section */
+.about {
+  background-color: rgb(89, 158, 135);
+}
+
+/* Center content inside about and portfolio */
+.about,
+.Portfolio,
+.welcom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  min-height: 400px; /* Ensure enough height for centering */
+}
+
+.about img {
+  width: 300px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+/* Login Section */
+.login {
+  background-color: rgb(245, 248, 247);
+}
+
+.login .form-group {
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login .form-control {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.login button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.login button:hover {
+  background-color: #3e8e41;
+}
+
+/* Footer Section */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  padding: 40px 20px;
+  background-color: rgb(52, 48, 95);
+  color: white;
+}
+
+.footer .col {
+  flex: 1;
+  text-align: center;
+}
+
+.footer h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ffdd57;
+}
+
+.footer p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
